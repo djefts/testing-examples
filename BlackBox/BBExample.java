@@ -1,3 +1,12 @@
+/* Author: David Jefts
+ *
+ * Description: This is a merge sort algorithm. It takes in a list of integers as input and returns the list sorted in
+ *              numerical order. The highest values will appear last in the list while the lowest values appear first.
+ *
+ * Equivalency Check Analysis: This program can be used as an example of how to use proper equivalency value checks to
+ *                             test. For example, the program can not work properly at all if any part of the input list
+ *                             is the wrong type. There are also value checks at each repositioning of an element.
+ */
 import java.util.Arrays;
 
 public class BBExample {
@@ -6,20 +15,20 @@ public class BBExample {
         int[] A = new int[100];
         for(int i = 0; i < A.length; i++)
             A[i] = ( int )(Math.random() * 400);
-        bbExample.foo(A, 0, A.length - 1);
+        bbExample.merge(A, 0, A.length - 1);
         System.out.println(Arrays.toString(A));
     }
     
-    private void foo(int[] arr, int l, int r) {
+    private void merge(int[] arr, int l, int r) {
         if(l < r) {
             int m = (l + r) / 2;
-            foo(arr, l, m);
-            foo(arr, m + 1, r);
-            foo2(arr, l, m, r);
+            merge(arr, l, m);
+            merge(arr, m + 1, r);
+            sort(arr, l, m, r);
         }
     }
     
-    private void foo2(int[] arr, int l, int m, int r) {
+    private void sort(int[] arr, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
         
