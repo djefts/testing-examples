@@ -4,7 +4,7 @@
 * ####BBExample.java
   - `BBExample.java` is an example file for the merge-sort algorithm that works on a list of integers. By its nature,
     the merge sort algorithm requires a lot of boundary value checks to ensure everything is in the right order, along
-    with equivalency checks to make sure that everthing in the array is of the same type. 
+    with equivalency checks to make sure that everything in the array is of the same type. 
 
 * ####BlackBoxTests.java
   - `BlackBoxTests.java` is an example grading scale program that uses multiple boundary checks to determine the letter
@@ -13,8 +13,8 @@
 ##White-Box Testing
 * ####WBExample.java
   - `WBExample.java` is a date converter for calculating the numerical day of the year that a certain date takes place.
-    It has many different paths to take, since it has to account for months with varied amounts of days, along with leap
-    years that change the total number of days in a year.
+    It has multiple different paths to take, since it has to account for months with varied amounts of days, along with
+    leap years that change the total number of days in a year.
 
 * ####WhiteBoxTests.java
   - `WhiteBoxTests.java` is a brute-force password crunching program. It takes in the password requirements such as
@@ -31,7 +31,7 @@
     the correct code is in the block comment at the top of the file.
 
 * ####CodeReviewTests.java
-  - `CodeReviewTests.java` is a volume calculator and averaaging program. This example program will calculate the volume
+  - `CodeReviewTests.java` is a volume calculator and averaging program. This example program will calculate the volume
     of multiple spheres based on a list of double-type diameters, then calculate the average volume of all of the
     spheres. There are many possible areas to plant defects: 
     - Line 30: `(4/3)`, defect because of integer division instead of decimal division. `4/3 = 1` while

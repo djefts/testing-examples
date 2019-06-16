@@ -1,6 +1,6 @@
 /* Author: David Jefts
  *
- * Description: Convert date and account for leap years, varied month lengths
+ * Description: Convert day of the year and time to am/pm time and mm/dd/yyyy date format, accounting for leap years
  *
  * Statement coverage, conditional coverage and branch coverage: This example allows for the demonstration of these
  * 																 types of techniques. Since there are conditions to be
